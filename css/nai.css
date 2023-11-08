@@ -1,0 +1,166 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Poppins", sans-serif;
+}
+ a, a:hover{
+ 	text-decoration: none;
+ }
+
+nav{
+	background: #2E6D32;
+	width: 100%;
+	position: relative;
+	justify-content: space-between;
+	padding: 10px 2px;
+	display: flex;
+}
+
+nav a{
+	
+	color: #E7F4DE;
+}
+
+nav a:hover{
+	color: #C8E6C9;
+}
+
+.logo{
+	flex: 1;
+}
+
+.logo a{
+	display: flex;
+	padding: 2px 5px;
+	align-items: center;
+	font-size: 20px;
+}
+
+.logo a:hover{
+	color: #fff;
+}
+ .logo img{
+ 	width: 70px;
+ 	margin-right: 10px;
+ }
+
+
+.menu ul{
+	display: flex;
+	list-style: none;
+	margin: auto 0;
+}
+
+.menu ul li{
+	margin: 0 2px;
+}
+
+.menu ul li a{
+	padding: 13px;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+
+.menu ul li a:hover{
+	font-size: 14px;
+	background: #E7F4DE;
+	color: #2E6D32;
+	border-radius: 1px;
+}
+
+.toggle{
+	font-size: 30px;
+	display: none;
+}
+
+.toggle:hover{
+	font-size: 30px;
+	background: #2E6D32;
+	color: #E7F4DE;
+	border-radius: 1px;
+	
+}
+.vertical-line {
+  width: 1px;
+  height: 20px;
+  background-color: #fff;
+  margin: 0 10px;
+  display: none;
+}
+@media screen and (max-width: 600px )
+{
+	nav{
+		display: block;
+		position: relative;
+		padding: 5px 20px;
+		flex-direction: column;
+	}
+
+
+	nav .menu{
+		position: absolute;
+		top:100%; left: 0; right: 0;
+		background: #2E6D32;
+		display: none;
+	}
+	nav .menu ul li{
+		width: 100%;
+	}
+	nav .menu li:hover{
+		width: 100%;
+		font-size: 14px;
+		background: #2E6D32;
+		color: #E7F4DE;
+		border-radius: 1px;
+	}
+	nav .menu.active, .toggle{
+		display: block;
+	}
+	nav .toggle{
+		position: absolute;
+		top:15px;
+		right: 20px;
+	}
+}
+
+@media screen and (max-width: 664px )
+{
+	nav{
+		display: block;
+		position: relative;
+		padding: 5px 20px;
+		flex-direction: column;
+	}
+
+
+	nav .menu{
+		position: absolute;
+		top:100%; left: 0; right: 0;
+		background: #2E6D32;
+		display: none;
+	}
+	nav .menu ul li{
+		width: 100%;
+	}
+	nav .menu li:hover{
+		width: 100%;
+		font-size: 14px;
+		background: #2E6D32;
+		color: #E7F4DE;
+		border-radius: 1px;
+	}
+	nav .menu.active, .toggle{
+		display: block;
+	}
+	nav .toggle{
+		position: absolute;
+		top:15px;
+		right: 20px;
+	}
+}

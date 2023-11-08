@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Introduction to PHP</title>
+	<link rel="stylesheet" type="text/css" href="css/design_intro.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Load the Ace editor library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+</head>
+<body>
+
+<div class="s-layout">
+<!-- Sidebar -->
+	<div class="s-layout__sidebar"> 
+	  <a class="s-sidebar__trigger" href="#0">
+	     <i class="fa fa-bars">☰</i>
+	  </a>
+
+	  <nav class="s-sidebar__nav">
+
+	     <ul>
+	        <li>
+	          <center>
+	            <a class="logo" href="#0">
+	              <i class="fa fa-home"></i><em><img src="images/oli.png" style="width: 100px;"></em>
+	           </a>
+	          </center>
+	           
+	        </li>
+	        <li>
+	           <a class="s-sidebar__nav-link" href="#0">
+	              <i class="fa fa-home"></i><em>Home</em>
+	           </a>
+	        </li>
+	        <li>
+	           <a class="s-sidebar__nav-link" href="#0">
+	             <i class="fa fa-user"></i><em>Introduction to PHP</em>
+	           </a>
+	        </li>
+	        <li>
+	           <a class="s-sidebar__nav-link" href="#0">
+	              <i class="fa fa-camera"></i><em>PHP Installation</em>
+	           </a>
+	        </li>
+	        <li>
+	           <a class="s-sidebar__nav-link" href="#0">
+	             <i class="fa fa-user"></i><em>PHP Common Use</em>
+	           </a>
+	        </li>
+	        <li>
+	           <a class="s-sidebar__nav-link" href="#0">
+	              <i class="fa fa-camera"></i><em>Introduction to Array</em>
+	           </a>
+	        </li>
+	        <li>
+	           <a class="s-sidebar__nav-link" href="#0">
+	             <i class="fa fa-user"></i><em>Web Concepts</em>
+	           </a>
+	        </li>
+	        <li>
+	           <a class="s-sidebar__nav-link" href="#0">
+	              <i class="fa fa-camera"></i><em>Advanced PHP</em>
+	           </a>
+	        </li>
+	        <li>
+	           <a class="s-sidebar__nav-link" href="#0">
+	             <i class="fa fa-user"></i><em>Database Connection</em>
+	           </a>
+	        </li>
+	        <li>
+	           <a class="s-sidebar__nav-link" href="#0">
+	              <i class="fa fa-camera"></i><em>OOP Concept</em>
+	           </a>
+	        </li>
+	     </ul>
+	  </nav>
+	</div>
+
+<!-- Content -->
+<main id="main-doc" class = "col-md-10 s-layout__content">
+            	<div >
+            		<center style="color: white; background: #0F6735; width: auto; height: 50px; padding: 1px; font-family: Arial;">
+            			<h1>SERVSER SIDE SCRIPTING</h1>
+            		</center>
+            	</div>
+                <section class = "main-section" id = "About">
+                	</header>
+                    <header><h3>Introduction to PHP</h3></header>
+                    <p>PHP is a open source general-purpose scripting language that is specially designed for web development and can be embedded into HTML. The term PHP is an acronym for PHP: Hypertext Preprocessor. PHP is a server-side scripting language designed specifically for web development. It is open-source which means it is free to download and use. It is very simple to learn and use. The files have the extension “.php”. </p>
+                    
+                    <div class = "demo-code">
+                            	<?php
+								 <!DOCTYPE html>
+								<html>
+								    <head>
+								        <title>Dangal Greetings</title>
+								    </head>
+								    <body>
+
+								        <?php
+								            echo "Greetings, Dangal ng Bayan!";
+								        ?>
+
+								    </body>
+								</html>
+								?>
+                        </div>
+                        <div class = "demo-code">
+                            <code>
+                            	<?php
+								 <!DOCTYPE html>
+								<html>
+								    <head>
+								        <title>Dangal Greetings</title>
+								    </head>
+								    <body>
+
+								        <?php
+								            echo "Greetings, Dangal ng Bayan!";
+								        ?>
+
+								    </body>
+								</html>
+								?>
+
+                            </code>
+                        </div>
+                    <p>From the example above, you can expect:</p>
+                    <ul>
+                        <li>x stores the value 5</li>
+                        <li>y stores the value 6</li>
+                        <li>z stores the value 11</li>
+                    </ul>
+                </section>
+            <!-- section 2 -->
+                <section class = "main-section" id = "Much_Like_Algebra">
+                    <header><h3>Much Like Algebra</h3></header>
+                    <p>In this example, <code>price1</code>, <code>price2</code> and <code>total</code> are variables:</p>
+                    <div class = "demo-code">
+                            <code>
+                                    var price1 = 5;<br>
+                                    var price2 = 6;<br>
+                                    var total = price1 + price2;
+                            </code>
+                    </div>
+                    <p>In programming, just like in algebra, we use variables (like price1) to hold values.</p>
+                    <p>In programming, just like in algebra, we use variables in expressions (total = price1 + price2).</p>
+                    <p>From the example above, you can calculate the total to be 11.</p>     
+                    <p class = "lead">JavaScript variables are containers for storing data values.</p>     
+                </section>
+            <!-- section 3 -->
+                <section class = "main-section" id = "Identifiers">
+                    <header><h3>JavaScript Identifiers</h3></header>
+                    <p>All JavaScript <strong>variables</strong> must be <strong>identified</strong> with <strong>unique names</strong>.</p>
+                    <p>These unique names are called <strong>identifiers</strong>.</p>
+                    <p>Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</p>
+                    <p>The general rules for constructing names for variables (unique identifiers) are:<br>
+                        <ul>
+                            <li>Names must begin with a letter </li>
+                            <li>Names can also begin with $ and _ (but we will not use it in this tutorial)</li>
+                            <li>Names are case sensitive (y and Y are different variables)</li>
+                            <li>Reserved words (like JavaScript keywords) cannot be used as names</li>
+                            <li>Names can contain letters, digits, underscores, and dollar signs.</li>
+                        </ul>
+                    </p>
+                    <p class = "lead">JavaScript identifiers are case-sensitive.</p>
+                </section>
+            <!-- section 4 -->
+                <section class = "main-section" id = "Assignment_Operator">
+                    <header><h3>The Assignment Operator</h3></header>
+                    <p>In JavaScript, the equal sign (<code>=</code>) is an "assignment" operator, not an "equal to" operator.</p>
+                    <p>This is different from algebra. The following does not make sense in algebra:</p>
+                    <div class = "demo-code">
+                        <code>
+                                x = x + 5
+                        </code>
+                    </div>
+                    <p>In JavaScript, however, it makes perfect sense: it assigns the value of x + 5 to x.</p>
+                    <p>(It calculates the value of x + 5 and puts the result into x. The value of x is incremented by 5.)</p>     
+                    <p class = "lead">The "equal to" operator is written like <code>==</code> in JavaScript.</p>  
+                </section>
+            <!-- section 5 -->
+                <section class = "main-section" id = "Data_Types">
+                    <header><h3>JavaScript Data Types</h3></header>
+                    <p>JavaScript variables can hold numbers like 100 and text values like "John Doe".</p>
+                    <p>In programming, text values are called text strings.</p>
+                    <p>JavaScript can handle many types of data, but for now, just think of numbers and strings.</p>
+                    <p>Strings are written inside double or single quotes. Numbers are written without quotes.</p>
+                    <p>If you put a number in quotes, it will be treated as a text string.</p>
+                    <div class = "demo-code">
+                        <code>
+                            var pi = 3.14; <br>
+                            var person = "John Doe";<br>
+                            var answer = 'Yes I am!';
+                        </code>
+                    </div>  
+                </section>
+            <!-- section 6 -->
+                <section class = "main-section" id = "Declaring_Variables">
+                    <header><h3>Declaring (Creating) JavaScript Variables</h3></header>
+                    <p>Creating a variable in JavaScript is called "declaring" a variable.</p>
+                    <p>You declare a JavaScript variable with the <code>var</code> keyword:</p>
+                    <div class = "demo-code">
+                        <code>
+                            var carName;
+                        </code>
+                    </div> 
+                    <p>After the declaration, the variable has no value (technically it has the value of <code>undefined</code>).</p>
+                    <p>To <strong>assign</strong> a value to the variable, use the equal sign:</p>
+                    <div class = "demo-code">
+                        <code>
+                            carName = "Volvo";
+                        </code>
+                    </div>
+                    <p>You can also assign a value to the variable when you declare it:</p> 
+                    <div class = "demo-code">
+                        <code>
+                            var carName = "Volvo";
+                        </code>
+                    </div>
+                    <p>In the example below, we create a variable called <code>carName</code> and assign the value "Volvo" to it.</p>
+                    <p>Then we "output" the value inside an HTML paragraph with id="demo":</p>
+                    <div class = "demo-code">
+                        <code>
+                            &ltp id="demo"&gt&lt/p&gt<br>
+                            <br>
+                            &ltscript&gt<br>
+                            var carName = "Volvo";<br>
+                            document.getElementById("demo").innerHTML = carName;<br> 
+                            &lt/script&gt
+                        </code>
+                    </div><br>
+                    <p class = "lead">It's a good programming practice to declare all variables at the beginning of a script.</p>
+                </section>
+            <!-- section 7 -->
+                <section class = "main-section" id = "One_Statement">
+                    <header><h3>One Statement, Many Variables</h3></header>
+                    <p>You can declare many variables in one statement.</p>
+                    <p>Start the statement with <code>var</code> and separate the variables by <strong>comma</strong>:</p>
+                    <div class = "demo-code">
+                        <code>
+                            var person = "John Doe", carName = "Volvo", price = 200;
+                        </code>
+                    </div> 
+                    <p>A declaration can span multiple lines:</p>
+                    <div class = "demo-code">
+                        <code>
+                                var person = "John Doe", <br>
+                                carName = "Volvo",<br>
+                                price = 200;
+                        </code>
+                    </div>
+                </section>
+            <!-- section 8 -->
+                <section class = "main-section" id = "Re_Declaring_Variables">
+                    <header><h3>Re-Declaring JavaScript Variables</h3></header>
+                    <p>If you re-declare a JavaScript variable, it will not lose its value.</p>
+                    <p>The variable <code>carName</code> will still have the value "Volvo" after the execution of these statements:</p>
+                    <div class = "demo-code">
+                        <code>
+                                var carName = "Volvo";<br>
+                                var carName;
+                        </code>
+                    </div> 
+                </section>
+            <!-- section 9 -->
+                <section class = "main-section" id = "Arithmetic">
+                    <header><h3>JavaScript Arithmetic</h3></header>
+                    <p>As with algebra, you can do arithmetic with JavaScript variables, using operators like <code>=</code> and <code>+</code>:</p>
+                    <div class = "demo-code">
+                        <code>
+                            var x = 5 + 2 + 3;
+                        </code>
+                    </div> 
+                    <p>You can also add strings, but strings will be concatenated:</p>
+                    <div class = "demo-code">
+                        <code>
+                            var x = "John" + " " + "Doe";
+                        </code>
+                    </div> 
+                    <p>Also try this:</p>
+                    <div class = "demo-code">
+                        <code>
+                            var x = "5" + 2 + 3;
+                        </code>
+                    </div> 
+                    <p>Now try this:</p>
+                    <div class = "demo-code">
+                        <code>
+                            var x = 2 + 3 + "5";
+                        </code>
+                    </div> 
+                </section>
+                
+            </main>
+</div>
+
+</body>
+</html>

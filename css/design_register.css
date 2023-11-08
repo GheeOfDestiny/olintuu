@@ -1,0 +1,130 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	background: #E7E9EB;
+}
+
+.tab-form{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	max-width: 420px;
+	background: #fff;
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0,0,10);
+}
+
+
+.tab-form .tab-header{
+	display: flex;
+	justify-content: space-between;
+	padding: 0px;
+}
+
+.tab-form .tab-header > a{
+	flex: 1;
+	padding: 15px;
+	text-align: center;
+	font-weight: bold;
+	border:none;
+	color: green;
+	background: #CBE6C9;
+	cursor: pointer;
+	text-decoration: none;
+	
+
+}
+.tab-form .tab-header > a.active{
+	color: green;
+	background: #fff;
+	cursor: pointer;
+	text-underline-position: none;
+	text-decoration: none;
+}
+.tab-form .tab-header > a.active:hover{
+	color: green;
+	background: #fff;
+	cursor: pointer;
+	text-underline-position: none;
+	text-decoration: none;
+}
+
+.tab-form .tab-body{
+	position: relative;
+	min-height: 530px;
+	overflow: hidden;
+}
+
+
+.tab-form .tab-body > div{
+	position: absolute;
+	width: 95%;
+	top: -150vh;
+	opacity: 0;
+	padding: 5px 25px;
+	transition: ocapacity 300ms ease-in-out 0ms;
+}
+.tab-form .tab-body > div.active{
+	top: 0px;
+	opacity: 1;
+	transition: ocapacity 300ms ease-in-out 0ms;
+}
+.tab-form .tab-body > div h2{
+	font-size: 25px;
+	color: #222;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.tab-form .tab-body > div .form-input{
+	margin: 4px 0px;
+}
+.tab-form .tab-body > div .form-input label{
+	font-size: 13px;
+
+}
+.tab-form .tab-body > div .form-input span{
+	font-size: 12px;
+	position: absolute;
+	right: 0;
+
+}
+.tab-form .tab-body > div .form-input input, select{
+	width: 100%;
+	margin-top: 5px;
+	font-size: 15px;
+	padding: 7px;
+	border: 1px #E7E9EB;
+	background: #E7E9EB;
+	cursor: pointer;
+	outline: none;
+}
+/* Chrome, Safari, Edge, Opera */
+.tab-form .tab-body > div .form-input input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  	-webkit-appearance: none;
+  	margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  	-moz-appearance: textfield;
+}
+.tab-form .tab-body > div .btn-primary input{
+	width: 100%;
+	margin-top: 5px;
+	font-size: 15px;
+	padding: 7px;
+	border:none;
+	color: green;
+	background: #CBE6C9;
+	cursor: pointer;
+}
+.tab-form .tab-body > div .btn-primary input:hover{
+	color: green;
+	background: #C0FAC0;
+	cursor: pointer;
+}
